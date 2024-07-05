@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a href=""><img src="asset/logo-white.png" class="putih" /></a>
+          <a href=""><img src="asset/logo-black.png" class="hitam" /></a>
+        </div>
+        <div class="menu">
+          <a href="#" class="tombol-menu">
+            <span class="garis"></span>
+            <span class="garis"></span>
+            <span class="garis"></span>
+          </a>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#gallery">Destination</a></li>
+            <li><a href="#team">Hotel</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="layar-penuh">
+      <header id="home">
+        <div class="overlay"></div>
+        <video autoplay muted loop>
+          <source src="asset/video-indonesia.mp4" type="video/mp4" />
+        </video>
+        <div class="intro">
+          <h3>Visit Indonesia</h3>
+          <p>
+            Kunjungi keindahan indonesia yang amat sangat indah bagaikan surga
+          </p>
+          <p>
+            <a href="#booking" class="tombol">BOOKING</a>
+          </p>
+        </div>
+      </header>
+      <main>
+        <section id="aboutus">
+          <div class="layar-dalam">
+            <h3>Kebudayaan Indonesia</h3>
+            <p class="ringkasan">
+              Indonesia dikenal dengan keanekaragaman budaya yang kaya dan menarik.
+            </p>
+            <div class="konten-isi">
+              <p>
+            
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="abuabu" id="support">
+          <div class="layar-dalam support">
+            <div>
+              <img src="asset/tarian.png" />
+              <h6>Tarian Adat</h6>
+              <p>
+                Salah satu contoh tarian tradisional yang 
+                terkenal di Indonesia adalah Tari Pendet dari Bali. 
+                Tarian ini biasanya digunakan untuk menyambut tamu istimewa 
+                atau sebagai ungkapan rasa syukur dalam upacara adat.
+              </p>
+            </div>
+            <div>
+              <img src="asset/tradisi.png" />
+              <h6>Tradisi Unik</h6>
+              <p>
+                Salah satu tradisi unik di Indonesia adalah Perayaan Nyepi di Bali. 
+                Nyepi adalah hari raya Hindu yang sakral di mana seluruh pulau Bali 
+                merayakannya dengan diam total. Selama Nyepi, penduduk Bali menjalankan tradisi 
+                "Catur Brata Penyepian" yang mencakup amati geni (tidak melakukan api), 
+                amati karya (tidak melakukan pekerjaan), amati lelungan (tidak melakukan hiburan), 
+                dan amati lelanguan (tidak melakukan perjalanan).
+              </p>
+            </div>
+            <div>
+              <img src="asset/upacara.png" />
+              <h6>Upacara Adat</h6>
+              <p>
+                Upacara adat di Indonesia sangat beragam dan kaya akan nilai-nilai tradisional. 
+                Contohnya, Upacara Ma’Nene di Toraja merupakan ritual pemakaman unik yang dilakukan 
+                setiap beberapa tahun sekali, di mana jenazah yang sudah dimakamkan diambil kembali 
+                untuk diberi pakaian baru dan diselenggarakan upacara penghormatan kembali.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="booking">
+          <div class="layar-dalam">
+            <h3>Booking</h3>
+            <form id="bookingForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br><br>
+              
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br><br>
+              
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required><br><br>
+              
+              <label for="destination">Destination:</label>
+              <select id="destination" name="destination" required>
+                <option value="">Select Destination</option>
+                <option value="Bromo">Bromo</option>
+                <option value="Raja Ampat">Raja Ampat</option>
+                <option value="Pantai Kalingking">Pantai Kalingking</option>
+                <option value="Tumpak Sewu">Tumpak Sewu</option>
+                <option value="Danau Toba">Danau Toba</option>
+                <!-- Tambahkan pilihan destinasi lainnya sesuai kebutuhan -->
+              </select><br><br>
+              
+              <label for="hotel">Hotel:</label>
+              <select id="hotel" name="hotel" required>
+                <option value="">Select Hotel</option>
+                <option value="Jimbaran Bay">Jimbaran Bay</option>
+                <option value="IHG Hotel">IHG Hotel</option>
+                <option value="The Oberoi">The Oberoi</option>
+                <!-- Tambahkan pilihan hotel lainnya sesuai kebutuhan -->
+              </select><br><br>
+              
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required><br><br>
+              
+              <label for="message">Message:</label><br>
+              <textarea id="message" name="message" rows="4" required></textarea><br><br>
+              
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </section>        
+        <!-- <section id="gallery">
+          <div><img src="asset/foto1.jpg" /></div>
+          <div><img src="asset/foto2.jpg" /></div>
+          <div><img src="asset/foto3.jpg" /></div>
+          <div><img src="asset/foto4.jpg" /></div>
+          <div><img src="asset/foto5.jpg" /></div>
+          <div><img src="asset/foto6.jpg" /></div>
+          <div><img src="asset/foto7.jpg" /></div>
+          <div><img src="asset/foto8.jpg" /></div>
+        </section> -->
+        <section class="gallery" id="gallery">
+          <h3>Destination</h3>
+          <div class="image-container">
+            <img src="asset/gunung.jpg" alt="Gambar 1" data-title="Gunung Bromo terkenal sebagai objek wisata utama di Jawa Timur. Sebagai sebuah objek wisata, Bromo menjadi menarik karena statusnya sebagai gunung berapi yang masih aktif. Gunung Bromo termasuk dalam kawasan Taman Nasional Bromo Tengger Semeru.">
+          </div>
+          <div class="image-container">
+            <img src="asset/raja.jpg" alt="Gambar 2" data-title="Raja Ampat dikenali dengan keindahan laut dan pemandangannya. Pulau ini diakui sebagai rumah bagi keanekaragaman hayati terumbu karang terbesar di dunia.">
+          </div>
+          <div class="image-container">
+            <img src="asset/pulang.png" alt="Gambar 2" data-title="Pemandangan Pantai Kelingking dari atas adalah pemandangan eksotis Tebing Paluang, atau disebut juga Karang Dewa">
+          </div>
+          <div class="image-container">
+            <img src="asset/danau.jpg" alt="Gambar 2" data-title="Danau Toba menjadi tempat yang sempurna untuk bersantai, karena udaranya sangat sejuk dan suasananya pun amat tenang.">
+          </div>
+          <div class="image-container">
+            <img src="asset/airterjun.jpg" alt="Gambar 2" data-title="Air Terjun Tumpak Sewu terletak di perbatasan Malang-Lumajang, Jawa Timur tepatnya berada pada dua desa yaitu Desa Sidomulyo, Kecamatan Pronojiwo, Kabupaten Lumajang dan Desa Sidorenggo Kecamatan Ampel Gading Kabupaten Malang Provinsi Jawa Timur, Indonesia.
+
+            ">
+          </div>
+          <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+        </section>
+        
+        <div class="modal" id="imageModal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modalImage">
+          <div id="caption"></div>
+        </div>
+        
+        <section class="quote">
+          <div class="layar-dalam">
+            <p>Jogja terbuat dari rindu, pulang dan angkringan.</p>
+          </div>
+        </section>
+        <section id="team">
+          <div class="layar-dalam">
+            <h3>Hotel</h3>
+            <p class="ringkasan">
+              Rekomendasi Hotel
+            </p>
+            <div class="tim">
+              <div>
+                <img src="asset/lombok.jpg" />
+                <h6>The Oberoi Beach Resort, Lombok</h6>
+                <span>Kolam Renang Outdoor, Wifi, Tepi Pantai, Antar Jemput Bandara, Spa & Pusat Kesehatan, Bar, Area Pantai Pribadi</span>
+              </div>
+              <div>
+                <img src="asset/Bali.jpg" />
+                <h6>InterContinental Bali Resort, an IHG Hotel</h6>
+                <span>Kolam renang outdoor
+                  WiFi gratis
+                  Tepi pantai
+                  Antar-jemput bandara
+                  Kamar keluarga
+                  Pusat kebugaran
+                  5 restoran
+                  Pembuat teh/kopi di semua kamar
+                  Bar
+                  Sarapannya sangat enak</span>
+              </div>
+              <div>
+                <img src="asset/Bali2.jpg" />
+                <h6>Four Seasons Resort Bali at Jimbaran Bay</h6>
+                <span>Kolam renang outdoor
+                  WiFi gratis
+                  Tepi pantai
+                  Antar-jemput bandara
+                  Pusat kebugaran
+                  2 restoran
+                  Spa & pusat kesehatan
+                  Parkir gratis
+                  Bar
+                  Sarapannya istimewa</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="abuabu" id="blog">
+          <div class="layar-dalam">
+            <h3>Blog</h3>
+            <p class="ringkasan">
+              Menceritakan pengalam pribadi ketika mengunjungi tempat
+            </p>
+            <div class="blog">
+              <div class="area">
+                <div
+                  class="gambar"
+                  style="background-image: url('asset/blog1.jpg')"
+                ></div>
+                <div class="text">
+                  <article>
+                    <h4><a href="#">What About Bromo?</a></h4>
+                    <p>
+                      Gunung Bromo/Gunung Brahma dipercaya sebagai gunung suci. 
+                      Setiap setahun sekali masyarakat Tengger mengadakan upacara Yadnya Kasada atau Kasodo.
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <div class="area">
+                <div
+                  class="gambar"
+                  style="background-image: url('asset/blog2.jpg')"
+                ></div>
+                <div class="text">
+                  <article>
+                    <h4><a href="#">What About Yogyakarta?</a></h4>
+                    <p>
+                      Yogyakarta juga merupakan Ibukota Daerah Istimewa Yogyakarta di Jawa yang terkenal dengan 
+                      Istana Sultan Yogyakarta atau Keraton Yogyakarta dimana keluarga Sultan masih tinggal di 
+                      istana tersebut sampai sekarang 
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="contact">
+        <div class="layar-dalam">
+          <div>
+            <h5>Info</h5>
+            Travelling Indonesia is your ultimate guide to exploring the beauty and diversity of Indonesia. We provide curated travel experiences, tips, and recommendations to make your journey memorable.
+          </div>
+          <div>
+            <h5>Contact</h5>
+            Address: Jl. Kampung Wakwaw. 123, Jakarta, Indonesia<br>
+        Phone: +62 123 456789<br>
+        Email: aditya@unpam003.com
+          </div>
+          <div>
+            <h5>Help</h5>
+            If you need assistance or have any questions, feel free to reach out to our support team
+          </div>
+          <div>
+            <h5>Sitemap</h5>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
+            sunt?
+          </div>
+        </div>
+        <div class="layar-dalam">
+          <div class="copyright">&copy; 2024 Travelling Indonesia Aditya Satya L</div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
